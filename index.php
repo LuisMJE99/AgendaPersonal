@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
 
     <!-- Custom styles for this template -->
 
@@ -45,7 +46,7 @@
     <h1 class="page-header text-center">Agenda de contacto Personal</h1>
       <div class="row">
           <div class="col-sm-12">
-        <a href="#addNew" class="btn btn-primary" data-toggle="modal" ><span class="fa fa-plus"></span> Nuevo</a>
+        <a href="#addNew" class="btn btn-primary" data-toggle="modal" style="margin-button: 8px"><span class="fa fa-plus"></span> Nuevo</a>
         <?php
           session_start();
           if(isset($_SESSION['message'])){
@@ -61,7 +62,7 @@
 
           }
         ?>
-      <table class="table table-bordered table-striped" style="margin-top:20px; " >
+      <table class="table table-bordered table-striped" id="miAgenda" style="margin-top:20px; " >
         <thead>
           <th>ID</th>
           <th>NOMBRE DE CONTACTO</th>
@@ -119,5 +120,12 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+    <script>
+      $(document).ready( function () {
+    $('#miAgenda').DataTable();
+} );
+    </script>
   </body>
 </html>
