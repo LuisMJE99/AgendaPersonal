@@ -12,7 +12,10 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <!--link rel="stylesheet" href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css"-->
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+
 
     <!-- Custom styles for this template -->
 
@@ -120,7 +123,8 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <!--script src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script para cuando estes conectado a internet-->
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
 
     <script>
       $(document).ready( function () {
